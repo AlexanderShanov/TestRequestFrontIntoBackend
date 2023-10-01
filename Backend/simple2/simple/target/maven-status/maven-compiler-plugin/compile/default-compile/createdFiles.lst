@@ -1,0 +1,5 @@
+simple\config\DispatcherServletInitializer.class
+simple\controllers\SimpleController.class
+simple\config\ApplicationConfig.class
+simple\controllers\SimpleController2.class
+simple\packages\SimpleResponce.class
