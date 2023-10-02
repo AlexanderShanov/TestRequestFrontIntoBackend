@@ -37,7 +37,7 @@ const send1 = () =>{
   });
 }
 
-function sendRequest() {
+function send2() {
    var xhttp = new XMLHttpRequest();
    xhttp.open("POST", "http://localhost:8080/simple/simple2/simple2", true); 
    xhttp.setRequestHeader("Content-Type", "application/json");
@@ -55,7 +55,7 @@ function sendRequest() {
 
 <template>
   <form 
-  @submit.prevent.stop ="sendRequest"
+  @submit.prevent.stop ="send1"
     class = "container pt-5 pb-5"
   >
     <div class = "container pt-5 pb-5">
@@ -74,12 +74,6 @@ function sendRequest() {
         отправить
       </button>
 
-      <button 
-      class ="mt-4 btn btn-primary" 
-      @click="sendRequest"
-      >
-        отправить2
-      </button>
 
     </div>
 
